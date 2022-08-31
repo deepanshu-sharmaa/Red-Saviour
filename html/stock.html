@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="blood.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/stockstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    <title>Stock Availability</title>
+</head>
+<body>
+    <div class="top">
+        <a href="index.html"><img src="../images/logo.png" alt="logo" style="height: 100px; width: 50;"></a>
+        <a href="index.html" style="text-decoration: none;"><h1>RED SAVIOUR</h1></a>
+    </div>
+    <h1 class="text" style="font-size: 50px;">Stock Availability</h1>
+    
+    <div class="container">
+        <div class="f-group">
+            <label for="State">State</label>
+            <select name="slct1" id="slct1" onchange="populate(this.id, 'slct2')">
+                <option value="">--Select State--</option>
+                <option value="all">All</option>
+                <option value="bihar">Bihar</option>
+                <option value="haryana">Haryana</option>
+                <option value="delhi">Delhi</option>
+                <option value="punjab">Punjab</option>
+                <option value="rajasthan">Rajasthan</option>
+                <option value="uttarakhand">Uttarakhand</option>
+                <option value="uttar pradesh">Uttar Pradesh</option>
+            </select>
+        </div>
+        <div class="f-group">
+            <label for="">District</label>
+            <select name="slct2" id="slct2"></select>
+        </div>
+    </div>
+
+    <div class="second">
+    <div>
+        <label for="Blood Group">Blood Group</label>
+        <select name="myBlood" id="BloodGroup">
+            <option value="-1">Select Blood Group</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="Type">Blood Component</label>
+        <select name="myType" id="Type">
+            <option value="-1">Select Blood Component</option>
+            <option value="Whole Blood">Whole Blood</option>
+            <option value="Plasma">Plasma</option>
+            <option value="Platelets">Platelets</option>
+        </select>
+    </div>
+</div>
+
+<div class="box-but"><button class="but" name="submit">
+    <strong><a href="notfound.html" style="text-decoration: none; color: black;">Search</a></strong>
+</button></div>
+
+<br>
+<a href="index.html" style="text-decoration: none;">Back to homepage</a>
+
+
+    <script src="../javascript/stock.js"></script>
+
+</body>
+</html>
