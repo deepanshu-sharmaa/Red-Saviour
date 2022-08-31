@@ -1,0 +1,116 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.top{
+  display: flex;
+  justify-content: baseline;
+}
+
+.top h1{
+  padding: 20px;
+  font-size: 50px;
+  color: #8b0000;
+}
+
+.hero{
+  width: 80%;
+  height: 450px;
+  position: relative;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+.btn-box{
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.btn-box button{
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  margin-right: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-box img{
+  width: 20px;
+  height: 20px;
+}
+
+.content-right img{
+  width: 350px;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% auto;
+  position: absolute;
+  transform: translateX(100%);
+  transition: 0.3s;
+}
+
+/*.content-left{
+  flex-basis: 50%;
+}*/
+
+.content-left p{
+  font-size: 13px;
+}
+
+.content a{
+  width: 150px;
+  display: block;
+  padding: 8px 5px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #ff7846;
+  color: #fff;
+  text-align: center;
+}
+
+.content-right{
+  flex-basis: 50%;
+}
+
+#content1{
+  transform: translateX(0px);
+}
+
+#btn1{
+  color: #8b0000;
+}
+
+.but{
+  display: flex;
+  align-items: flex-end;
+}
+
+.table-responsive{
+  min-height: .01%;
+  overflow-x: auto;
+}
+
+.table-bordered, .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{
+  border: 1px solid #ddd;
+}
+
+.tabled{
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  margin-left: 200px;
+  margin-bottom: 20px;
+  text-indent: initial;
+  border-spacing: 0;
+  border-collapse: collapse;
+  background-color: transparent;
+}
